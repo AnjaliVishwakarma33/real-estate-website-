@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <!-- slick css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- slick css -->
+    <!-- css home -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- css home -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- google font -->
+
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- icon -->
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- font awesome -->
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- google font -->
+    <style>
+        /* header css */
+        /* haeder css */
+        
+        @media(max-width:770px) {
+            body {
+                margin-left: 5px !important;
+                margin-right: 5px !important;
+            }
+            .bot,
+            .choose {
+                border-bottom: none !important;
+            }
+        }
+        
+        .choose {
+            width: 800px !important;
+            margin-left: 0px !important;
+            border-bottom: 1px solid darkgray;
+        }
+        
+        .choosen {
+            font-size: 1.3rem;
+            margin-left: -60px !important;
+        }
+        
+        .bot {
+            border-bottom: 3px solid orangered;
+        }
+        
+        .im {
+            border: 1px solid darkgray;
+            border-radius: 100%;
+            width: 70px;
+            height: 70px;
+            padding: 5px;
+            background-color: whitesmoke;
+        }
+        /* .first {
+            background-color: rgb(252, 238, 192);
+        } */
+        /* sec2 */
+        
+        .adm {
+            height: 500px;
+        }
+        
+        .bac {
+            /* background-color: rgba(163, 150, 150, 0.7); */
+            height: 500px;
+            /* margin: auto; */
+            /* margin-top: 250px !important; */
+            font-variant: small-caps;
+        }
+        
+        .ach {
+            margin-top: 200px !important;
+        }
+        /* sec2 */
+        /* contact */
+        
+        .contact-info {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+            box-shadow: 10px 5px 20px 0px;
+            border-radius: 20px;
+        }
+        
+        .contact-info-icon {
+            margin-bottom: 15px;
+        }
+        
+        .contact-info-item {
+            background: #071c34;
+            padding: 30px 0px;
+            border-radius: 20px;
+            border: 2px solid orange;
+        }
+        
+        .contact-page-sec .contact-page-form h2 {
+            color: #071c34;
+            text-transform: capitalize;
+            font-size: 22px;
+            font-weight: 700;
+        }
+        
+        .contact-page-form .col-md-6.col-sm-6.col-xs-12 {
+            padding-left: 0;
+        }
+        
+        .contact-page-form.contact-form input {
+            margin-bottom: 5px;
+        }
+        
+        .contact-page-form.contact-form textarea {
+            height: 110px;
+        }
+        
+        .contact-page-form.contact-form input[type="submit"] {
+            background: orange;
+            width: 150px;
+            border-color: #071c34;
+        }
+        
+        .contact-info-icon i {
+            font-size: 48px;
+            color: #fda40b;
+        }
+        
+        .contact-info-text p {
+            margin-bottom: 0px;
+        }
+        
+        .contact-info-text h2 {
+            color: #fff;
+            font-size: 22px;
+            text-transform: capitalize;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .contact-info-text span {
+            color: #999999;
+            font-size: 16px;
+            display: inline-block;
+            width: 100%;
+        }
+        
+        .contact-page-form input {
+            background: #f9f9f9 none repeat scroll 0 0;
+            border: 1px solid #f9f9f9;
+            margin-bottom: 20px;
+            padding: 12px 16px;
+            width: 100%;
+            border-radius: 4px;
+        }
+        
+        .contact-page-form .message-input {
+            display: inline-block;
+            width: 100%;
+            padding-left: 0;
+        }
+        
+        .single-input-field textarea {
+            background: #f9f9f9 none repeat scroll 0 0;
+            border: 1px solid #f9f9f9;
+            width: 100%;
+            height: 120px;
+            padding: 12px 16px;
+            border-radius: 4px;
+        }
+        
+        .single-input-fieldsbtn input[type="submit"] {
+            background: #ffb32f none repeat scroll 0 0;
+            color: #fff;
+            display: inline-block;
+            font-weight: 600;
+            padding: 10px 0;
+            text-transform: capitalize;
+            width: 150px;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        
+        .single-input-fieldsbtn input[type="submit"]:hover {
+            background: #071c34;
+            transition: all 0.4s ease-in-out 0s;
+            border-color: #071c34
+        }
+        
+        .single-input-field h4 {
+            color: #464646;
+            text-transform: capitalize;
+            font-size: 14px;
+        }
+        
+        .contact-page-form {
+            display: inline-block;
+            width: 100%;
+            margin-top: 30px;
+        }
+        
+        .contact-page-map {
+            margin-top: 36px;
+        }
+        
+        .contact-page-form form {
+            padding: 20px 15px 0;
+        }
+        /* contact */
+    </style>
+
+</head>
+
+<body>
+    <!-- header -->
+    <!-- <section>
+        <div class="container-fluid bg-dark p-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 p-2">
+                        <div class="d-inline p-2  text-white"><i class="material-icons" style="font-size:18px;color:red">mail_outline</i></div>
+                        <div class="d-inline p-2  text-white">support@sweethome.com</div>
+                        <div class="d-inline p-2  text-white"><i class="material-icons" style="font-size:18px;color:red">location_on</i></div>
+                        <div class="d-inline p-2  text-white">171,Near sai baba mandir</div>
+                    </div>
+                    <div class="col-md-6 text-lg-end">
+                        <div class="d-inline p-2  text-white"><i class='fab fa-instagram'></i></div>
+                        <div class="d-inline p-2  text-white"><i class='fab fa-twitter'></i></div>
+                        <div class="d-inline p-2  text-white"><i class='fab fa-facebook'></i></div>
+                        <div class="d-inline p-2  text-white"><button class="mt-2" style="color: white;background: orangered;">Login</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row p-4">
+                <div class="col-md-4 p-2">
+                    <span class="fs-2 fw-bold" style="color: orangered;">Vishwakarma's Home</span>
+                </div>
+                <div class="col-md-5 text-center">
+                    <nav class="navbar navbar-expand-lg navbar-light " style="font-size: 18px;">
+                        <div class="container-fluid">
+
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <div class="navbar-nav">
+                                    <a class="nav-link active" href="#">Home</a>
+                                    <a class="nav-link active" href="#">About</a>
+                                    <a class="nav-link active" href="#">Services</a>
+                                    <a class="nav-link active" href="#">Property</a>
+                                    <a class="nav-link active" href="#">Gallery</a>
+                                    <a class="nav-link active" href="#">Contact</a>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="d-inline p-3 m-2 fs-5 shadow" style="background: white;"><i class='fas fa-search mt-3'></i></div>
+                    <div class="d-inline p-3  fs-5 shadow"><i class="fa fa-user-o"></i></div>
+                    <div class="d-inline p-3 m-2 fs-5 shadow"><i class='fas fa-shopping-cart'></i></div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- header -->
+
+    <!-- 1 -->
+    <section>
+        <div class="container-fluid choose">
+            <div class="row">
+                <div class="col-md-2  col-6 bot p-3"><img src="images_project/pro1.jpg" alt="" class="img-fluid im first"></div>
+                <div class="col-md-2 col-6 mt-3 bot p-3"><span class="choosen ">Buy a home</span></div>
+                <div class="col-md-2 col-6  p-3"><img src="images_project/pro2.jpg" alt="" class="img-fluid im"></div>
+                <div class="col-md-2 col-6 mt-3 p-3"><span class="choosen">Sell a home </span></div>
+                <div class="col-md-2  col-6 p-3"><img src="images_project/pro3.jpg" alt="" class="img-fluid im"></div>
+                <div class="col-md-2 col-6 mt-3 p-3"><span class="choosen">Rent a home </span></div>
+            </div>
+        </div>
+        <br>
+    </section>
+    <!-- 1 end -->
+    <!-- 2 -->
+    <section>
+        <div class="card bg-dark text-white">
+            <img src="images_project/anj7.jpg" class="card-img img-fluid adm" alt="...">
+            <center>
+
+                <div class="card-img-overlay  bac">
+                    <h1 style=" font-size: 60px; background-image: linear-gradient(to right, rgba(250, 206, 191, 0.7) , white);text-shadow: 5px 2px 3px black;" class="card-title mt-5 ach p-3">Contact US</h1>
+                    <!-- <p class="card-text mt-3">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+
+                </div>
+            </center>
+        </div>
+    </section>
+    <!-- 2 end -->
+
+
+    <!-- contact -->
+    <section style="background-image: url(anj5.jpg);">
+        <section class="contact-page-sec p-5">
+            <div class="container">
+
+                <div class="col-md-4">
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="contact-info">
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_CEyvj2.json" background="transparent" speed="1" style="justify-content: center; height: 52px;" loop autoplay></lottie-player>
+
+                                </div>
+                                <div class="contact-info-text">
+                                    <h2> Head Office address</h2>
+                                    <span>171,Sadar 176080 </span>
+                                    <span>Jhansi , INDIA</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="contact-info">
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_8SdEu9.json" background="transparent" speed="1" style="justify-content: center; height: 52px;" loop autoplay></lottie-player>
+                                </div>
+                                <div class="contact-info-text">
+                                    <h2>Time to contact us</h2>
+                                    <span>Mon - Thu  9:00 am - 4.00 pm</span>
+                                    <span>Thu - Mon  10.00 pm - 5.00 pm</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="contact-info">
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_CEyvj2.json" background="transparent" speed="1" style="justify-content: center; height: 52px;" loop autoplay></lottie-player>
+
+                                </div>
+                                <div class="contact-info-text">
+                                    <h2>Working Area</h2>
+                                    <span>Mumbai,Delhi,Gujrat</span>
+                                    <span>All over INDIA</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="contact-page-form" method="post">
+                            <h2 style="color:black" class="fs-3">Get in Touch</h2>
+                            <form action="" method="post">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <div class="single-input-field">
+                                            <input type="text" placeholder="Your Name" name="name" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <div class="single-input-field">
+                                            <input type="email" placeholder="E-mail" name="email" required/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <div class="single-input-field">
+                                            <input type="text" placeholder="Phone Number" name="number" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <div class="single-input-field">
+                                            <input type="text" placeholder="Subject" name="subject" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 message-input">
+                                        <div class="single-input-field">
+                                            <textarea placeholder="Write Your Message" name="message"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="single-input-fieldsbtn">
+                                        <input type="submit" name="submit" value="Send Now" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="contact-page-map" style="margin-top:80px;">
+                            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1837608.914297911!2d84.68099449892505!3d25.89974342906415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed5844f0bb6903%3A0x57ad3fed1bbae325!2sBihar!5e0!3m2!1sen!2sin!4v1626666645878!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+                            <!-- <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_6gqtyxsc.json" background="transparent" speed="0.3" style="justify-content: center; margin-top: 75px;" loop autoplay></lottie-player> -->
+                            <img src="images_project/anj5.jpg" class="w-100 h-25" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <center>
+                <div class="container">
+                    <div class="col" style=" border: 15px solid orange;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d153699.05900277878!2d78.52115282611267!3d25.5618280478625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397776d109fc2263%3A0xd8f3fcb89936cf14!2sPanchkuian%20Mandir!5e0!3m2!1sen!2sin!4v1679769059379!5m2!1sen!2sin"
+                            width="400" height="450" style="border:0;justify-content: center;width: 80%;padding: 40px;height: 500px;margin: auto;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </center>
+            <!-- <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d153699.05900277878!2d78.52115282611267!3d25.5618280478625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397776d109fc2263%3A0xd8f3fcb89936cf14!2sPanchkuian%20Mandir!5e0!3m2!1sen!2sin!4v1679769059379!5m2!1sen!2sin"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        </section>
+    </section>
+    <!-- contact -->
+
+
+
+    <!-- footer -->
+    <section class="mt-5">
+        <section class="cta">
+            <div class="container">
+
+                <div class="cta-card">
+                    <div class="card-content">
+                        <h2 class="h2 card-title">Looking for a dream home?</h2>
+
+                        <p class="card-text">We can help you realize your dream of a new home</p>
+                    </div>
+
+                    <button class="btn cta-btn">
+  <span>Explore Properties</span>
+
+  <ion-icon name="arrow-forward-outline"></ion-icon>
+</button>
+                </div>
+
+            </div>
+        </section>
+
+
+        <footer class="footer">
+
+            <div class="footer-top">
+                <div class="container">
+
+                    <div class="footer-brand">
+
+                        <a href="#" class="logo">
+                            <h1 style="color: orangered;"> Vishwakarma's </h1>
+                        </a>
+
+                        <p class="section-text">
+                            Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum is dummy text of the printing.
+                        </p>
+
+                        <ul class="contact-list">
+
+                            <li>
+                                <a href="#" class="contact-link">
+                                    <ion-icon name="location-outline"></ion-icon>
+
+                                    <address>Sadar, Jhansi, Uttar Pradesh</address>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="tel:+0123456789" class="contact-link">
+                                    <ion-icon name="call-outline"></ion-icon>
+
+                                    <span>+91 0088997766</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="mailto:contact@homeverse.com" class="contact-link">
+                                    <ion-icon name="mail-outline"></ion-icon>
+
+                                    <span>contact@Vishwakarma.com</span>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                        <ul class="social-list">
+
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-youtube"></ion-icon>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="footer-link-box">
+
+                        <ul class="footer-list">
+
+                            <li>
+                                <p class="footer-list-title">Company</p>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">About</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">Blog</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">All Products</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">Locations Map</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">FAQ</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">Contact us</a>
+                            </li>
+
+                        </ul>
+
+                        <ul class="footer-list">
+
+                            <li>
+                                <p class="footer-list-title">Services</p>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">Order tracking</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">Wish List</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">Login</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">My account</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">Terms & Conditions</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">Promotional Offers</a>
+                            </li>
+
+                        </ul>
+
+                        <ul class="footer-list">
+
+                            <li>
+                                <p class="footer-list-title">Customer Care</p>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">Login</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">My account</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">Wish List</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">Order tracking</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">FAQ</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">Contact us</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="container">
+
+                    <p class="copyright">
+                        &copy; 2023 <a href="#">Vishwakarma</a>. All Rights Reserved
+                    </p>
+
+                </div>
+            </div>
+
+        </footer>
+    </section>
+    <!-- footer -->
+
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <!-- font -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- font -->
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- jquery cdn -->
+    <!-- slick js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- slick js -->
+    <!-- main script for slick -->
+    <!-- <script type="text/javascript">
+        $('.slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            centerMode: true,
+            variableWidth: true
+        });
+    </script> -->
+    <!-- main script for slick -->
+    <!-- home script -->
+    <script src="./assets/js/script.js"></script>
+    <!-- home script -->
+    <!-- icon home -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- icon home -->
+</body>
+
+</html>

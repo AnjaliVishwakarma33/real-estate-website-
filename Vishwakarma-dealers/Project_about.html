@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <!-- slick css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- slick css -->
+    <!-- css home -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- css home -->
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- google font -->
+    <style>
+        @media(max-width:770px) {
+            body {
+                margin-left: 5px !important;
+                margin-right: 5px !important;
+            }
+            .bot,
+            .choose {
+                border-bottom: none !important;
+            }
+        }
+        
+        .choose {
+            width: 800px !important;
+            margin-left: 0px !important;
+            border-bottom: 1px solid darkgray;
+        }
+        
+        .choosen {
+            font-size: 1.3rem;
+            margin-left: -60px !important;
+        }
+        
+        .bot {
+            border-bottom: 3px solid orangered;
+        }
+        
+        .im {
+            border: 1px solid darkgray;
+            border-radius: 100%;
+            width: 70px;
+            height: 70px;
+            padding: 5px;
+            background-color: whitesmoke;
+        }
+        /* .first {
+            background-color: rgb(252, 238, 192);
+        } */
+        /* sec2 */
+        
+        .adm {
+            height: 500px;
+        }
+        
+        .bac {
+            /* background-color: rgba(163, 150, 150, 0.7); */
+            height: 500px;
+            /* margin: auto; */
+            /* margin-top: 250px !important; */
+            font-variant: small-caps;
+        }
+        
+        .ach {
+            margin-top: 200px !important;
+        }
+        /* sec2 */
+        /* sec3 */
+        /* * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+        } */
+        /* body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Teko', sans-serif;
+            background: #f1fbff;
+            width: 100%;
+            min-height: 100vh;
+        } */
+        
+        .wrapper {
+            width: 80%;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        .section-header {
+            text-transform: uppercase;
+            line-height: 70px;
+            padding-bottom: 30px;
+            font-size: 50px;
+            color: #262626;
+            letter-spacing: 2px;
+        }
+        
+        .content {
+            padding: 10%;
+        }
+        
+        .content h2 {
+            font-size: 30px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+        
+        .content p {
+            line-height: 1.5;
+        }
+        
+        .main-content {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            /* grid-main-content-gap 25px; */
+            grid-column-gap: 15px;
+        }
+        
+        .main-content .box {
+            position: relative;
+            cursor: pointer;
+            margin-bottom: 15px;
+            box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+            height: 250px;
+            overflow: hidden;
+        }
+        
+        .main-content .box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 5px;
+            height: 100%;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .main-content .box:hover:before {
+            top: 0;
+            right: calc(100% - 5px);
+            z-index: 10;
+        }
+        
+        .main-content .box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .main-content .box .img-text {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.9);
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: 100%;
+            transition: all 0.5s ease-in-out;
+        }
+        
+        .main-content .box:hover .img-text {
+            top: 0;
+            right: 0;
+        }
+        /* sec3 */
+        /* sec 4 */
+        
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        /* img {
+            height: 170px;
+            width: 100px;
+        } */
+        /* body {
+            background: hsl(0, 0, 94%);
+            margin-left: 200px !important;
+            margin-right: 200px !important;
+        } */
+        
+        .ml {
+            /* margin-left: 200px; */
+            font-weight: bolder;
+            font-size: 2.2rem !important;
+        }
+        
+        .f {
+            color: rgb(244, 139, 174);
+            font-size: 1.2rem;
+            margin-bottom: -3px;
+        }
+        
+        .fa {
+            margin-top: 9px;
+            font-size: 1.5rem;
+            color: darkgrey;
+        }
+        
+        .sarch {
+            border: none !important;
+            width: 350px !important;
+        }
+        
+        .sarch:hover {
+            border: none !important;
+            box-shadow: none !important;
+        }
+        
+        .two {
+            margin-top: 5px !important;
+            margin-left: 50px;
+        }
+        
+        .brd {
+            font-size: 0.7rem;
+        }
+        
+        .brd a {
+            color: darkgrey;
+        }
+        
+        .first {
+            background-color: rgb(252, 238, 192);
+        }
+        
+        .bot {
+            border-bottom: 3px solid rgb(244, 139, 174);
+        }
+        
+        .io {
+            font-size: 0.9rem;
+        }
+        
+        .gol {
+            border: 1px solid gray;
+            border-radius: 100%;
+        }
+        
+        .card_circle {
+            /* border: 1px solid #ddd;
+    border-radius: 6px;
+    max-width: 350px; */
+            text-align: center;
+            margin-top: 60px;
+            width: 180px !important;
+        }
+        
+        .card_img {
+            width: 140px;
+            height: 140px;
+            overflow: hidden;
+            border-radius: 100%;
+            /* margin: 15px !important; */
+            /* margin: -60px auto 0; */
+        }
+        
+        .card_img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .card_info {
+            padding-bottom: 20px;
+            padding-top: 10px;
+            width: 200px !important;
+        }
+        
+        .cardOf {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 340px !important;
+            height: 400px;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px;
+        }
+        
+        .cardOf:hover {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            background-color: #ffffff;
+        }
+        
+        .image1 {
+            position: relative;
+            width: 100%;
+            height: 250px;
+            background-image: url("images_project/pro5.jpeg");
+            background-size: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .image2 {
+            position: relative;
+            width: 100%;
+            height: 250px;
+            background-image: url("images_project/pro2.jpg");
+            background-size: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .image3 {
+            position: relative;
+            width: 100%;
+            height: 250px;
+            background-image: url("images_project/pro5.jpeg");
+            background-size: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .image4 {
+            position: relative;
+            width: 100%;
+            height: 250px;
+            background-image: url("images_project/pro4.jpg");
+            background-size: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .image5 {
+            position: relative;
+            width: 100%;
+            height: 250px;
+            background-image: url("images_project/pro3.jpg");
+            background-size: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .image6 {
+            position: relative;
+            width: 100%;
+            height: 250px;
+            background-image: url("images_project/pro1.jpg");
+            background-size: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .offer {
+            position: absolute;
+            bottom: 20px;
+            left: 0px;
+            padding: 5px 10px;
+            background-color: orange;
+            color: white;
+            font-size: 12px;
+            border-radius: 3px;
+        }
+        
+        .time {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.7);
+            color: #000000;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 0 0 0 10px;
+            margin-bottom: 20px;
+        }
+        
+        .info {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .type {
+            font-size: 16px;
+            color: #6c757d;
+            margin-bottom: 10px;
+        }
+        
+        .rating {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: orangered;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            align-self: flex-start;
+            margin-right: 10px;
+        }
+        
+        .star {
+            color: #ffffff;
+            margin-right: 5px;
+        }
+        
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #f39c12;
+            align-self: flex-end;
+            margin-left: 10px;
+        }
+        /* sec4 */
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <!-- <header class="header" data-header>
+
+        <div class="overlay" data-overlay></div>
+
+        <div class="header-top">
+            <div class="container">
+
+                <ul class="header-top-list">
+
+                    <li>
+                        <a href="mailto:info@homeverse.com" class="header-top-link">
+                            <ion-icon name="mail-outline"></ion-icon>
+
+                            <span>support@sweethome.com</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="header-top-link">
+                            <ion-icon name="location-outline"></ion-icon>
+
+                            <address>171,Near sai baba mandir</address>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="wrapper">
+                    <ul class="header-top-social-list">
+
+                        <li>
+                            <a href="#" class="header-top-social-link">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="header-top-social-link">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="header-top-social-link">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+
+                       
+
+                    </ul>
+
+                    <button class="header-top-btn">Login</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="container">
+
+                <a href="#" class="logo">
+                  
+                    <H1 style="color: orangered;">Vishwakarma's Home</H1>
+                </a>
+
+                <nav class="navbar" data-navbar>
+
+                    <div class="navbar-top">
+
+                        <a href="#" class="logo">
+                            <img src="./assets/images/logo.png" alt="Homeverse logo">
+                        </a>
+
+                        <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+                    </div>
+
+                    <div class="navbar-bottom">
+                        <ul class="navbar-list">
+
+                            <li>
+                                <a href="#home" class="navbar-link" data-nav-link>Home</a>
+                            </li>
+
+                            <li>
+                                <a href="#about" class="navbar-link" data-nav-link>About</a>
+                            </li>
+
+                            <li>
+                                <a href="#service" class="navbar-link" data-nav-link>Service</a>
+                            </li>
+
+                            <li>
+                                <a href="#property" class="navbar-link" data-nav-link>Rent</a>
+                            </li>
+
+                            <li>
+                                <a href="#blog" class="navbar-link" data-nav-link>Gallery</a>
+                            </li>
+
+                            <li>
+                                <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </nav>
+
+                <div class="header-bottom-actions">
+
+                    <button class="header-bottom-actions-btn" aria-label="Search">
+            <ion-icon name="search-outline"></ion-icon>
+
+            <span>Search</span>
+          </button>
+
+                    <button class="header-bottom-actions-btn" aria-label="Profile">
+            <ion-icon name="person-outline"></ion-icon>
+
+            <span>Profile</span>
+          </button>
+
+                    <button class="header-bottom-actions-btn" aria-label="Cart">
+            <ion-icon name="cart-outline"></ion-icon>
+
+            <span>Cart</span>
+          </button>
+
+                    <button class="header-bottom-actions-btn" data-nav-open-btn aria-label="Open Menu">
+            <ion-icon name="menu-outline"></ion-icon>
+
+            <span>Menu</span>
+          </button>
+
+                </div>
+
+            </div>
+        </div>
+
+    </header> -->
+    <!-- header -->
+
+    <!-- about section 1 -->
+
+    <!-- 1 -->
+    <section>
+        <div class="container-fluid choose">
+            <div class="row">
+                <div class="col-md-2  col-6 bot p-3"><img src="images_project/pro1.jpg" alt="" class="img-fluid im first"></div>
+                <div class="col-md-2 col-6 mt-3 bot p-3"><span class="choosen ">Buy a home</span></div>
+                <div class="col-md-2 col-6  p-3"><img src="images_project/pro2.jpg" alt="" class="img-fluid im"></div>
+                <div class="col-md-2 col-6 mt-3 p-3"><span class="choosen">Sell a home </span></div>
+                <div class="col-md-2  col-6 p-3"><img src="images_project/pro3.jpg" alt="" class="img-fluid im"></div>
+                <div class="col-md-2 col-6 mt-3 p-3"><span class="choosen">Rent a home </span></div>
+            </div>
+        </div>
+        <br>
+    </section>
+    <!-- 1 end -->
+    <!-- 2 -->
+    <section>
+        <div class="card bg-dark text-white">
+            <img src="images_project/pro5.jpeg" class="card-img img-fluid adm" alt="...">
+            <center>
+
+                <div class="card-img-overlay  bac">
+                    <h1 style=" font-size: 60px; background-image: linear-gradient(to right, rgb(255, 69, 0,0.7) , white);text-shadow: 5px 2px 3px black;" class="card-title mt-5 ach p-3">ABOUT US</h1>
+                    <!-- <p class="card-text mt-3">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+
+                </div>
+            </center>
+        </div>
+    </section>
+    <!-- 2 end -->
+    <!-- 3 -->
+    <section>
+
+        <center>
+
+            <div class="wrapper">
+                <h1 class="section-header">Our Team</h1>
+
+                <div class="main-content">
+                    <div class="box">
+                        <img src="images_project/t1.jpg" alt="">
+                        <div class="img-text">
+                            <div class="content">
+                                <h2>Head of marketing</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam assumenda nulla aspernatur enim ut, minima.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="images_project/t2.jpg" alt="">
+                        <div class="img-text">
+                            <div class="content">
+                                <h2>Selling Agent</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam assumenda nulla aspernatur enim ut, minima.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="images_project/t3.jpg" alt="">
+                        <div class="img-text">
+                            <div class="content">
+                                <h2>Property Dealer</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam assumenda nulla aspernatur enim ut, minima.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="images_project/t4.jpg" alt="">
+                        <div class="img-text">
+                            <div class="content">
+                                <h2>Broker</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam assumenda nulla aspernatur enim ut, minima.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="images_project/t5.jpg" alt="">
+                        <div class="img-text">
+                            <div class="content">
+                                <h2>Real Estate Broker</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam assumenda nulla aspernatur enim ut, minima.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="images_project/t6.jpg" alt="">
+                        <div class="img-text">
+                            <div class="content">
+                                <h2>Marketing</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam assumenda nulla aspernatur enim ut, minima.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="images_project/t1.jpg" alt="">
+                        <div class="img-text">
+                            <div class="content">
+                                <h2>Head of marketing</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam assumenda nulla aspernatur enim ut, minima.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="images_project/t2.jpg" alt="">
+                        <div class="img-text">
+                            <div class="content">
+                                <h2>Selling Agent</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam assumenda nulla aspernatur enim ut, minima.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="images_project/t3.jpg" alt="">
+                        <div class="img-text">
+                            <div class="content">
+                                <h2>Property Dealer</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam assumenda nulla aspernatur enim ut, minima.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="images_project/t4.jpg" alt="">
+                        <div class="img-text">
+                            <div class="content">
+                                <h2>Broker</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam assumenda nulla aspernatur enim ut, minima.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="images_project/t5.jpg" alt="">
+                        <div class="img-text">
+                            <div class="content">
+                                <h2>Real Estate Broker</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam assumenda nulla aspernatur enim ut, minima.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="images_project/t6.jpg" alt="">
+                        <div class="img-text">
+                            <div class="content">
+                                <h2>Marketing</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam assumenda nulla aspernatur enim ut, minima.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </center>
+
+
+    </section>
+    <br><br>
+    <!-- 3 end  -->
+    <!-- 4 -->
+    <section>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="cardOf">
+                    <div class="image1">
+                        <div class="offer">50% OFF</div>
+                        <div class="time">Luxury Flat</div>
+                    </div>
+                    <div class="info">
+                        <div>
+                            <div class="name">Home Name</div>
+                            <div class="type">Type</div>
+                        </div>
+                        <div>
+                            <div class="rating">
+                                <span class="star fa fa-star"></span>
+
+                                <span class="rating-value">4.5</span>
+                            </div>
+                            <div class="price">$133.99</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardOf">
+                    <div class="image2">
+                        <div class="offer">50% OFF</div>
+                        <div class="time">Craftsman</div>
+                    </div>
+                    <div class="info">
+                        <div>
+                            <div class="name">Home Name</div>
+                            <div class="type">Type</div>
+                        </div>
+                        <div>
+                            <div class="rating">
+                                <span class="star fa fa-star"></span>
+
+                                <span class="rating-value">4.5</span>
+                            </div>
+                            <div class="price">$120.99</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardOf">
+                    <div class="image3">
+                        <div class="offer">50% OFF</div>
+                        <div class="time">. Colonial</div>
+                    </div>
+                    <div class="info">
+                        <div>
+                            <div class="name">Home Name</div>
+                            <div class="type">Type</div>
+                        </div>
+                        <div>
+                            <div class="rating">
+                                <span class="star fa fa-star"></span>
+
+                                <span class="rating-value">4.5</span>
+                            </div>
+                            <div class="price">$150</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardOf">
+                    <div class="image3">
+                        <div class="offer">50% OFF</div>
+                        <div class="time">. Colonial</div>
+                    </div>
+                    <div class="info">
+                        <div>
+                            <div class="name">Home Name</div>
+                            <div class="type">Type</div>
+                        </div>
+                        <div>
+                            <div class="rating">
+                                <span class="star fa fa-star"></span>
+
+                                <span class="rating-value">4.5</span>
+                            </div>
+                            <div class="price">$150</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- 4 end -->
+
+
+
+
+    <!-- footer -->
+    <section>
+        <section class="cta">
+            <div class="container">
+
+                <div class="cta-card">
+                    <div class="card-content">
+                        <h2 class="h2 card-title">Looking for a dream home?</h2>
+
+                        <p class="card-text">We can help you realize your dream of a new home</p>
+                    </div>
+
+                    <button class="btn cta-btn">
+      <span>Explore Properties</span>
+
+      <ion-icon name="arrow-forward-outline"></ion-icon>
+    </button>
+                </div>
+
+            </div>
+        </section>
+
+
+        <footer class="footer">
+
+            <div class="footer-top">
+                <div class="container">
+
+                    <div class="footer-brand">
+
+                        <a href="#" class="logo">
+                            <h1 style="color: orangered;"> Vishwakarma's </h1>
+                        </a>
+
+                        <p class="section-text">
+                            Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum is dummy text of the printing.
+                        </p>
+
+                        <ul class="contact-list">
+
+                            <li>
+                                <a href="#" class="contact-link">
+                                    <ion-icon name="location-outline"></ion-icon>
+
+                                    <address>Sadar, Jhansi, Uttar Pradesh</address>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="tel:+0123456789" class="contact-link">
+                                    <ion-icon name="call-outline"></ion-icon>
+
+                                    <span>+91 0088997766</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="mailto:contact@homeverse.com" class="contact-link">
+                                    <ion-icon name="mail-outline"></ion-icon>
+
+                                    <span>contact@Vishwakarma.com</span>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                        <ul class="social-list">
+
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-youtube"></ion-icon>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="footer-link-box">
+
+                        <ul class="footer-list">
+
+                            <li>
+                                <p class="footer-list-title">Company</p>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">About</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">Blog</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">All Products</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">Locations Map</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">FAQ</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">Contact us</a>
+                            </li>
+
+                        </ul>
+
+                        <ul class="footer-list">
+
+                            <li>
+                                <p class="footer-list-title">Services</p>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">Order tracking</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">Wish List</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">Login</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">My account</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">Terms & Conditions</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">Promotional Offers</a>
+                            </li>
+
+                        </ul>
+
+                        <ul class="footer-list">
+
+                            <li>
+                                <p class="footer-list-title">Customer Care</p>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">Login</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">My account</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">Wish List</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">Order tracking</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">FAQ</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">Contact us</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="container">
+
+                    <p class="copyright">
+                        &copy; 2023 <a href="#">Vishwakarma</a>. All Rights Reserved
+                    </p>
+
+                </div>
+            </div>
+
+        </footer>
+    </section>
+    <!-- footer -->
+
+
+
+
+
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <!-- font -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- font -->
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- jquery cdn -->
+    <!-- slick js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- slick js -->
+    <!-- main script for slick -->
+    <!-- <script type="text/javascript">
+        $('.slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            centerMode: true,
+            variableWidth: true
+        });
+    </script> -->
+    <!-- main script for slick -->
+    <!-- home script -->
+    <script src="./assets/js/script.js"></script>
+    <!-- home script -->
+    <!-- icon home -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- icon home -->
+</body>
+
+</html>
